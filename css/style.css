@@ -41,7 +41,7 @@ body {
 .column-container {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
 
@@ -54,6 +54,7 @@ body {
   margin-left: 8px;
   list-style: none;
   position: relative;
+  margin-bottom: 20px;
 }
 .column-add-card {
   cursor: pointer;
