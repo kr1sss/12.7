@@ -1,6 +1,7 @@
 body {
   margin: 0;
-  background-image: linear-gradient(120deg, #6f84ed 40%, transparent 80%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(248,80,50,1)), color-stop(39%, rgba(241,111,92,1)), color-stop(62%, rgba(232,193,0,1)), color-stop(78%, rgba(245,154,144,1)), color-stop(100%, rgba(231,56,39,1)));
+  background: -webkit-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 39%, rgba(232,193,0,1) 62%, rgba(245,154,144,1) 78%, rgba(231,56,39,1) 100%);
 }
 
 * {
@@ -30,14 +31,27 @@ body {
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 3px;
+  font-size: 50px;
 }
 
 .create-column {
+  display: block;
+  background-color: #16a085;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  color: #fff;
   cursor: pointer;
   margin: 0 auto;
-  display: block;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
+  padding: 20px;
 }
+
+.create-column:hover {
+  background-color: #fff;
+  color: #16a085;
+  border-color: #16a085;
+}
+
 .column-container {
   display: flex;
   flex-direction: row;
@@ -50,7 +64,7 @@ body {
   order: 1;
   min-width: 300px;
   min-height: 50vh;
-  background-color: lightgrey;
+  background-color: #545e5c;
   margin-left: 8px;
   list-style: none;
   position: relative;
@@ -62,11 +76,23 @@ body {
   margin: 5px 8px;
   margin-right: auto;
   margin-left: auto;
+  background-color: #16a085;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  color: #fff;
+  padding: 10px;
+}
+
+.column-add-card:hover {
+  background-color: #fff;
+  color: #16a085;
+  border-color: #16a085;
 }
 
 .column-title {
   letter-spacing: 3px;
   text-transform: uppercase;
+  color: #fff;
 }
 
 h2 {
@@ -81,19 +107,28 @@ h2 {
   padding: 4px;
   overflow: hidden;
   position: relative;
+  color: #fff;
 }
 .card-list {
   list-style: none;
   margin: 5px;
   padding: 0px;
 }
+
 .card-description {
   margin: 2px 0;
 }
+
 .card-placeholder {
   border: 2px solid lightgrey;
   box-sizing: border-box;
   display: block;
   height: 60px;
   margin-bottom: 5px;
+}
+
+.btn-delete:hover {
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
 }

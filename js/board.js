@@ -1,5 +1,5 @@
 var board = {
-	name: 'Tablica Kanban',
+	name: 'Kanban Board',
 	createColumn: function(column) {
 	  this.element.append(column.element);
 	  initSortable();
@@ -9,7 +9,7 @@ var board = {
 
 $('.create-column')
     .click(function() {
-        var columnName = prompt('Wpisz nazwę karty');
+        var columnName = prompt('Type card name');
         $.ajax({
     		url: baseUrl + '/column',
     		method: 'POST',
